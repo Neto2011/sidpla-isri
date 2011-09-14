@@ -1,0 +1,7 @@
+parameters:
+#    isri_sid_pla.example.class: ISRI\SidPlaBundle\Example
+
+services:
+#    isri_sid_pla.example:
+#        class: %isri_sid_pla.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

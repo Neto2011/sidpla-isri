@@ -1,0 +1,12 @@
+parameters:
+#    isri_sid_pla_users.example.class: ISRI\SidPla\UsersBundle\Example
+
+services:
+#    isri_sid_pla_users.example:
+#        class: %isri_sid_pla_users.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+ sidpla_user.registration.form.type:
+        class: ISRI\SidPla\UsersBundle\Form\Type\RegistrationFormType
+        arguments: [%fos_user.model.user.class%]
+        tags:
+            - { name: form.type, alias: sidpla_user_registration }

@@ -1,0 +1,43 @@
+
+{% block body %}
+<script type="text/javascript">
+      $(document).ready(function(){
+        
+        var myGrid = $('#theGrid');        
+        myGrid.jqGrid({ 
+          url: 'consultarUnidadesOrgJSON',
+          datatype:'json',
+          altRows:true,
+          colNames:['Id','Unidad', 'Descripcion', 'Responsable', 'Direccion', 'Telefono' ],
+          colModel:[
+            { name:'id', index: 'id', width:20,editable:false,editoptions:{size:15}  },
+            { name:'nombre', index: 'nombre', width:150,editable:true,editoptions:{size:25}  },
+            { name:'descripcion', index: 'descripcion',width:300,editable:true,editoptions:{size:50}},
+            { name:'responable', index: 'responable',width:150,editable:true,editoptions:{size:50}},
+            { name:'direccion', index: 'direccion',width:60,editable:true,editoptions:{size:50}},
+            { name:'telefono', index: 'telefono',width:60,editable:true,editoptions:{size:50}} ],            
+          rowNum:10,
+          rowList:[10,20,30],
+          multiselect: false,
+          pager: jQuery('#pager'),
+          viewrecords: true,          
+            caption: 'Unidades Organizativas',
+            height: "100%",
+            editurl: 'manttUnidadEdicion'
+        });
+         myGrid.jqGrid('navGrid','#pager',
+        {edit:false,add:false,del:false},
+        {width:550,height:200},
+        {width:550,height:200},
+        {width:550,height:100},
+        {multipleSearch:true, multipleGroup:true}
+        );
+          
+          
+      });
+</script>
+
+<table id="theGrid" class="scroll"></table> 
+<div id="pager" class="scroll" style="text-align:center;"></div>
+
+{% endblock %}

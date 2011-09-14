@@ -1,0 +1,42 @@
+ISRISidPlaPaoBundle_homepage:
+    pattern:  /
+    defaults: { _controller: ISRISidPlaPaoBundle:Default:index }
+
+#PARA TIPO PERIODO
+ISRISidPlaPaoBundle_mantenimientoTipoPeriodo:
+    pattern:  /mantenimientoTipoPeriodo
+    defaults: { _controller: ISRISidPlaPaoBundle:AccionPaoTipoPeriodo:mantenimientoTipoPeriodo }
+    
+ISRISidPlaPaoBundle_consultarTipoPeriodoJSON:
+    pattern:  /consultarTipoPeriodoJSON
+    defaults: { _controller: ISRISidPlaPaoBundle:AccionPaoTipoPeriodo:consultarTipoPeriodoJSON}
+
+ISRISidPlaPaoBundle_manttTipoPeriodo:
+    pattern:  /manttTipoPeriodo
+    defaults: { _controller: ISRISidPlaPaoBundle:AccionPaoTipoPeriodo:manttTipoPeriodo }
+    
+#PARA PERIODO OFICIAL
+ISRISidPlaPaoBundle_mantenimientoPeriodoOficial:
+    pattern:  /mantenimientoPeriodoOficial
+    defaults: { _controller: ISRISidPlaPaoBundle:AccionPaoPeriodoOficial:mantenimientoPeriodoOficial  }
+    
+ISRISidPlaPaoBundle_consultarPeriodoOficialJSON:
+    pattern:  /consultarPeriodoOficialJSON
+    defaults: { _controller: ISRISidPlaPaoBundle:AccionPaoPeriodoOficial:consultarPeriodoOficialJSON  }
+    
+#PARA JUSTIFICACION    
+ISRISidPlaPaoBundle_consultarJustificacion:
+    pattern:  /consultarJustificacion
+    defaults: { _controller: ISRISidPlaPaoBundle:AccionJustificacion:consultarJustificacion }
+    
+ISRISidPlaPaoBundle_consultarJustificacionJSON:
+    pattern:  /consultarJustificacionJSON
+    defaults: { _controller: ISRISidPlaPaoBundle:AccionJustificacion:consultarJustificacionJSON }   
+    
+ISRISidPlaPaoBundle_manttJustificacionEdicion:
+    pattern:  /manttJustificacionEdicion    
+    defaults: { _controller: ISRISidPlaPaoBundle:AccionJustificacion:manttJustificacionEdicion }
+
+ISRISidPlaPaoBundle_actualizarJustificacion:
+    pattern:  /actualizarJustificacion    
+    defaults: { _controller: ISRISidPlaPaoBundle:AccionJustificacion:actualizarJustificacion }

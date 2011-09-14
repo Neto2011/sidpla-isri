@@ -1,0 +1,3 @@
+ISRISidPlaUsersBundle_homepage:
+    pattern:  /{name}
+    defaults: { _controller: ISRISidPlaUsersBundle:Default:index }

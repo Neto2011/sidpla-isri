@@ -1,0 +1,131 @@
+ISRISidPlaAdminBundle_homepage:
+    pattern:  /admin/
+    defaults: { _controller: ISRISidPlaAdminBundle:Default:index }
+    
+ISRISidPlaAdminBundle_crearOpc:
+    pattern:  /admin/crearOpc
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminOpciones:addOcp }
+    
+ISRISidPlaAdminBundle_nuevaOpc:
+    pattern:  /admin/nuevaOpc
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminOpciones:nuevaOpc }
+
+ISRISidPlaAdminBundle_nuevoRol:
+    pattern:  /admin/nuevoRol
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminRoles:nuevoRol }
+    
+        
+ISRISidPlaAdminBundle_crearRol:
+    pattern:  /admin/crearRol
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminRoles:addRol }
+
+        
+ISRISidPlaAdminBundle_consultarRoles:
+    pattern:  /admin/consultarRoles
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminRoles:consultarRoles }
+    
+ISRISidPlaAdminBundle_consultarOpciones:
+    pattern:  /admin/consultarOpc
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminOpciones:consultarOpc, _format: json }
+    requirements: { _format: (xml|json), _method: GET }  
+
+ISRISidPlaAdminBundle_manttRoles:
+    pattern:  /admin/manttRoles
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminRoles:mattRoles }
+    
+ISRISidPlaAdminBundle_mattOpciones:
+    pattern:  /admin/mattOpciones
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminOpciones:mattOpciones }
+    
+ISRISidPlaAdminBundle_manttOpcEdicion:
+    pattern:  /admin/manttOpcEdicion
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminOpciones:manttOpcEdicion }
+    
+ISRISidPlaAdminBundle_manttRolEdicion:
+    pattern:  /admin/manttRolEdicion
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminRoles:manttRolEdicion }
+    
+ISRISidPlaAdminBundle_asignarOpcRoles:
+    pattern:  /admin/asignarOpcRoles
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminRoles:asignarOpcRoles }
+    
+ISRISidPlaAdminBundle_opcionesAsignadas:
+    pattern:  /admin/opcionesAsignadas
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminRoles:opcionesAsignadas }
+    
+ISRISidPlaAdminBundle_insertOpcSeleccRol:
+    pattern:  /admin/insertOpcSeleccRol    
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminRoles:insertOpcSeleccRol }
+
+ISRISidPlaAdminBundle_deleteOpcSeleccRol:
+    pattern:  /admin/deleteOpcSeleccRol    
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminRoles:deleteOpcSeleccRol }
+    
+ISRISidPlaAdminBundle_opcionesSinAsignar:
+    pattern:  /admin/opcionesSinAsignar    
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminRoles:opcionesSinAsignar }
+
+ISRISidPlaAdminBundle_consultarUnidadesOrg:
+    pattern:  /admin/consultarUnidadesOrg    
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminUnidadOrg:consultarUnidadesOrg }
+
+ISRISidPlaAdminBundle_ingresoNuevaUnidadesOrg:
+    pattern:  /admin/ingresoNuevaUnidadesOrg    
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminUnidadOrg:ingresoNuevaUnidadesOrg }
+    
+ISRISidPlaAdminBundle_ingresarUnidadOrg:
+    pattern:  /admin/ingresarUnidadOrg    
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminUnidadOrg:ingresarUnidadOrg }  
+    
+ISRISidPlaAdminBundle_consultarMunicipiosJSON:
+    pattern:  /admin/consultarMunicipiosJSON    
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminUnidadOrg:consultarMunicipiosJSON } 
+    
+ISRISidPlaAdminBundle_consultarUnidadesOrgJSON:
+    pattern:  /admin/consultarUnidadesOrgJSON    
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminUnidadOrg:consultarUnidadesOrgJSON }    
+
+ISRISidPlaAdminBundle_consultarMenCorrtemp:
+    pattern:  /admin/consultarMenCorrtemp    
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminMenCorreTemp:consultarMenCorrtemp }
+
+ISRISidPlaAdminBundle_consultarMenCorrtempJSON:
+    pattern:  /admin/consultarMenCorrtempJSON    
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminMenCorreTemp:consultarMenCorrtempJSON }   
+    
+ISRISidPlaAdminBundle_manttMenCorrtempEdicion:
+    pattern:  /admin/manttMenCorrtempEdicion
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminMenCorreTemp:manttMenCorrtempEdicion }  
+         
+ISRISidPlaAdminBundle_mantenimientoNotificacion:
+    pattern:  /admin/mantenimientoNotificacion   
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionNotificacionSistema:mantenimientoNotificacion }
+    
+ISRISidPlaAdminBundle_consultarNotificacionJSON:
+    pattern:  /admin/consultarNotificacionJSON   
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionNotificacionSistema:consultarNotificacionJSON }
+    
+MinSalSidPlaAdminBundle_manttNotificacionEdicion:
+    pattern:  /admin/manttNotificacionEdicion
+    defaults: { _controller: MinSalSidPlaAdminBundle:AccionNotificacionSistema:manttNotificacionEdicion }   
+  
+ISRISidPlaAdminBundle_mattUnidadesOrg:
+    pattern:  /admin/mattUnidadesOrg
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminUnidadOrg:mattUnidadesOrg }
+    
+ISRISidPlaAdminBundle_mattEmpleados:
+    pattern:  /admin/mattEmpleados
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminEmpleados:mattEmpleados } 
+    
+ISRISidPlaAdminBundle_consultarEmpleadosJSON:
+    pattern:  /admin/consultarEmpleadosJSON
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminEmpleados:consultarEmpleadosJSON } 
+
+ISRISidPlaAdminBundle_manttEmpleadoEdicion:
+    pattern:  /admin/manttEmpleadoEdicion
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminEmpleados:manttEmpleadoEdicion } 
+
+ISRISidPlaAdminBundle_consultarUnidadesOrgJSONSelect:
+    pattern:  /admin/consultarUnidadesOrgJSONSelect
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionAdminUnidadOrg:consultarUnidadesOrgJSONSelect } 
+    
