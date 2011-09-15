@@ -105,9 +105,9 @@ ISRISidPlaAdminBundle_consultarNotificacionJSON:
     pattern:  /admin/consultarNotificacionJSON   
     defaults: { _controller: ISRISidPlaAdminBundle:AccionNotificacionSistema:consultarNotificacionJSON }
     
-MinSalSidPlaAdminBundle_manttNotificacionEdicion:
+ISRISidPlaAdminBundle_manttNotificacionEdicion:
     pattern:  /admin/manttNotificacionEdicion
-    defaults: { _controller: MinSalSidPlaAdminBundle:AccionNotificacionSistema:manttNotificacionEdicion }   
+    defaults: { _controller: ISRISidPlaAdminBundle:AccionNotificacionSistema:manttNotificacionEdicion }   
   
 ISRISidPlaAdminBundle_mattUnidadesOrg:
     pattern:  /admin/mattUnidadesOrg

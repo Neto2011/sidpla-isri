@@ -179,7 +179,7 @@ class CaractOrg
      *
      * @param ISRI\SidPla\UnidadOrgBundle\Entity\FuncionEspecifica $funcionesEspec
      */
-    public function addFuncionesEspec(ISRI\SidPla\UnidadOrgBundle\Entity\FuncionEspecifica $funcionesEspec)
+    public function addFuncionesEspec(\ISRI\SidPla\UnidadOrgBundle\Entity\FuncionEspecifica $funcionesEspec)
     {
         $this->funcionesEspec[] = $funcionesEspec;
     }
@@ -199,7 +199,7 @@ class CaractOrg
      *
      * @paramISRI\SidPla\UnidadOrgBundle\Entity\UnidadOrganizativa $unidadOrganizativa
      */
-    public function setUnidadOrganizativa(ISRI\SidPla\AdminBundle\Entity\UnidadOrganizativa $unidadOrganizativa)
+    public function setUnidadOrganizativa(\ISRI\SidPla\AdminBundle\Entity\UnidadOrganizativa $unidadOrganizativa)
     {
         $this->unidadOrganizativa = $unidadOrganizativa;
     }
@@ -219,7 +219,7 @@ class CaractOrg
      *
      * @param ISRI\SidPla\UnidadOrgBundle\Entity\FuncionEspecifica $funcionesEspec
      */
-    public function addFuncionEspecifica(ISRI\SidPla\UnidadOrgBundle\Entity\FuncionEspecifica $funcionesEspec)
+    public function addFuncionEspecifica(\ISRI\SidPla\UnidadOrgBundle\Entity\FuncionEspecifica $funcionesEspec)
     {
         $this->funcionesEspec[] = $funcionesEspec;
     }
@@ -229,7 +229,7 @@ class CaractOrg
      *
      * @param ISRI\SidPla\UnidadOrgBundle\Entity\ObjetivoEspecifico $objetivosEspec
      */
-    public function addObjetivoEspecifico(ISRI\SidPla\UnidadOrgBundle\Entity\ObjetivoEspecifico $objetivosEspec)
+    public function addObjetivoEspecifico(\ISRI\SidPla\UnidadOrgBundle\Entity\ObjetivoEspecifico $objetivosEspec)
     {
         $this->objetivosEspec[] = $objetivosEspec;
     }
