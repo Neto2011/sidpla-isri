@@ -1,0 +1,39 @@
+ISRISidPlaGestionPaoBundle_homepage:
+    pattern:  /gestionpao/
+    defaults: { _controller: ISRISidPlaGestionPaoBundle:Default:index }
+
+ISRISidPlaGestionPaoBundle_consultarObjInst:
+    pattern:  /gestionpao/consultarObjInst
+    defaults: { _controller: ISRISidPlaGestionPaoBundle:AccionAdminObjetivosInstitucionales:consultarObjInst }    
+
+ISRISidPlaGestionPaoBundle_consultarObjInstJSON:
+    pattern:  /gestionpao/consultarObjInstJSON
+    defaults: { _controller: ISRISidPlaGestionPaoBundle:AccionAdminObjetivosInstitucionales:consultarObjInstJSON }    
+
+ISRISidPlaGestionPaoBundle_manttObjInstEdicion:
+    pattern:  /gestionpao/manttObjInstEdicion
+    defaults: { _controller: ISRISidPlaGestionPaoBundle:AccionAdminObjetivosInstitucionales:manttObjInstEdicion }    
+
+ISRISidPlaGestionPaoBundle_consultarValores:
+    pattern:  /gestionpao/consultarValores
+    defaults: { _controller: ISRISidPlaGestionPaoBundle:AccionAdminValores:consultarValores }    
+
+ISRISidPlaGestionPaoBundle_consultarValoresJSON:
+    pattern:  /gestionpao/consultarValoresJSON
+    defaults: { _controller: ISRISidPlaGestionPaoBundle:AccionAdminValores:consultarValoresJSON }    
+
+ISRISidPlaGestionPaoBundle_manttValoresEdicion:
+    pattern:  /gestionpao/manttValoresEdicion
+    defaults: { _controller: ISRISidPlaGestionPaoBundle:AccionAdminValores:manttValoresEdicion } 
+    
+ISRISidPlaGestionPaoBundle_consultarResultadoEsp:
+    pattern:  /gestionpao/consultarResultadoEsp
+    defaults: { _controller: ISRISidPlaGestionPaoBundle:AccionAdminResultadoEsperado:consultarResultadoEsp }    
+
+ISRISidPlaGestionPaoBundle_consultarResultadoEspJSON:
+    pattern:  /gestionpao/consultarResultadoEspJSON
+    defaults: { _controller: ISRISidPlaGestionPaoBundle:AccionAdminResultadoEsperado:consultarResultadoEspJSON }    
+
+ISRISidPlaGestionPaoBundle_manttResultadoEspEdicion:
+    pattern:  /gestionpao/manttResultadoEspEdicion
+    defaults: { _controller: ISRISidPlaGestionPaoBundle:AccionAdminResultadoEsperado:manttResultadoEspEdicion }

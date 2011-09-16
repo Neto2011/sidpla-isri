@@ -1,0 +1,7 @@
+parameters:
+#    isri_sid_pla_gestion_pao.example.class: ISRI\SidPla\GestionPaoBundle\Example
+
+services:
+#    isri_sid_pla_gestion_pao.example:
+#        class: %isri_sid_pla_gestion_pao.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

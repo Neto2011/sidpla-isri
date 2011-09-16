@@ -1,5 +1,5 @@
 {# ingresar nueva  #}
-{% extends 'MinSalSidPlaBundle:Default:index.html.twig' %}
+{% extends 'ISRISidPlaBundle:Default:index.html.twig' %}
 {% block body %}
 <script type="text/javascript">        
       $(document).ready(function(){
@@ -50,7 +50,7 @@
                 <li><a href="#tabs-3">Unidades de Salud</a></li>
         </ul>
         <div id="tabs-1" >
-            <form action="{{ path('MinSalSidPlaAdminBundle_ingresarUnidadOrg')}}" method="post" >
+            <form action="{{ path('ISRISidPlaAdminBundle_ingresarUnidadOrg')}}" method="post" >
                 <table align="center" id="datosgeneralesTabla"  >
                     <tr>
                         <td colspan="4" align="center" >Datos Generales Nueva Unidad<br><br></td>
@@ -121,7 +121,7 @@
         <div class="jqmWindow" id="dialog">
             <a href="#" class="jqmClose">Cerrar</a>
             <hr>
-            {% include 'MinSalSidPlaAdminBundle:Empleado:showAllEmpleados.html.twig'%}
+            {% include 'ISRISidPlaAdminBundle:Empleado:showAllEmpleados.html.twig'%}
         </div>
 </div>
 
