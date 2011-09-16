@@ -1,3 +1,27 @@
 ISRISidPlaUnidadOrgBundle_homepage:
-    pattern:  /hello/{name}
+    pattern:  /mainUnidadOrg
     defaults: { _controller: ISRISidPlaUnidadOrgBundle:Default:index }
+
+ISRISidPlaUnidadOrgBundle_ingresarInfoCaract:
+    pattern:  /ingresarInfoCaract
+    defaults: { _controller: ISRISidPlaUnidadOrgBundle:AccionInfoCaractOrganizacion:ingresarInfoCaract }
+
+ISRISidPlaUnidadOrgBundle_guardarCaracteristicas:
+    pattern:  /guardarCaracteristicas
+    defaults: { _controller: ISRISidPlaUnidadOrgBundle:AccionInfoCaractOrganizacion:guardarCaracteristicas }
+    
+ISRISidPlaUnidadOrgBundle_consultarFuncionesOrg:
+    pattern:  /consultarFuncionesOrg
+    defaults: { _controller: ISRISidPlaUnidadOrgBundle:AccionInfoCaractOrganizacion:consultarFuncionesOrg }
+
+ISRISidPlaUnidadOrgBundle_consultarObjetivosOrgEspec:
+    pattern:  /consultarObjetivosOrgEspec
+    defaults: { _controller: ISRISidPlaUnidadOrgBundle:AccionInfoCaractOrganizacion:consultarObjetivosOrgEspec }
+
+ISRISidPlaUnidadOrgBundle_manttObjEspec:
+    pattern:  /manttObjEspec
+    defaults: { _controller: ISRISidPlaUnidadOrgBundle:AccionInfoCaractOrganizacion:manttObjEspec }
+    
+ISRISidPlaUnidadOrgBundle_manttFuncEspec:
+    pattern:  /manttFuncEspec
+    defaults: { _controller: ISRISidPlaUnidadOrgBundle:AccionInfoCaractOrganizacion:manttFuncEspec }

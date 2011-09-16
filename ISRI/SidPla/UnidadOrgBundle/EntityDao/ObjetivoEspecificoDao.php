@@ -21,9 +21,9 @@
   
  */
 
-namespace MinSal\SidPla\UnidadOrgBundle\EntityDao;
+namespace ISRI\SidPla\UnidadOrgBundle\EntityDao;
 
-use MinSal\SidPla\UnidadOrgBundle\Entity\ObjetivoEspecifico;
+use ISRI\SidPla\UnidadOrgBundle\Entity\ObjetivoEspecifico;
 
 /**
  * Description of ObjetivoEspecificoDao
@@ -39,7 +39,7 @@ class ObjetivoEspecificoDao {
     function __construct($doctrine){ 
         $this->doctrine=$doctrine;      	
         $this->em=$this->doctrine->getEntityManager();
-        $this->repositorio=$this->doctrine->getRepository('MinSalSidPlaUnidadOrgBundle:ObjetivoEspecifico');
+        $this->repositorio=$this->doctrine->getRepository('ISRISidPlaUnidadOrgBundle:ObjetivoEspecifico');
     } 
     
     public function delObjEspec($id){            

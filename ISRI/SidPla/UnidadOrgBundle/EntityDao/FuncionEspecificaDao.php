@@ -20,9 +20,9 @@
  * 
  * 
  */
-namespace MinSal\SidPla\UnidadOrgBundle\EntityDao;
+namespace ISRI\SidPla\UnidadOrgBundle\EntityDao;
 
-use MinSal\SidPla\UnidadOrgBundle\Entity\FuncionEspecifica;
+use ISRI\SidPla\UnidadOrgBundle\Entity\FuncionEspecifica;
 
 
 /**
@@ -39,7 +39,7 @@ class FuncionEspecificaDao {
     function __construct($doctrine){ 
         $this->doctrine=$doctrine;      	
         $this->em=$this->doctrine->getEntityManager();
-        $this->repositorio=$this->doctrine->getRepository('MinSalSidPlaUnidadOrgBundle:FuncionEspecifica');
+        $this->repositorio=$this->doctrine->getRepository('ISRISidPlaUnidadOrgBundle:FuncionEspecifica');
     } 
     
      public function delFuncionEspec($id){            
